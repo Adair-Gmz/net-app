@@ -1,8 +1,8 @@
 const API_URL = "https:jsonplaceholder.typicode.com";
 
-export default async function getPosts(){
+export async function getPosts(){
     const response = await fetch(`${API_URL}/posts`);
-    return responsejson();
+    return response.json();
 }
 
 export async function getUser(userId){
